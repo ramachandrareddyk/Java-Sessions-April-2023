@@ -1,5 +1,8 @@
 package javaSesions;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class ArrayConcept {
 
 	public static void main(String[] args) {
@@ -141,7 +144,16 @@ public class ArrayConcept {
 			System.out.println(e);
 		}
 		//Assignment
-		int e[]= {1,7,8,9,0};
+		Integer e[]= {1,7,8,9,0};
+		
+		Arrays.sort(e);
+		
+		for(Integer j:e) {
+			System.out.println(j);
+		}
+		
+		Arrays.sort(e,Collections.reverseOrder());
+		
 		//1. Add all vaus in array(sum of the array)
 		//2. find even numbers in array
 		//3. find odd numbers in array
